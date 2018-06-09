@@ -1,8 +1,8 @@
 ---
 # tasks file for test
-- install some packages
+- name: install some packages
   package:
-    name: {{ item }}
+    name: "{{ item }}"
   with_items:
     - nginx
     - git
